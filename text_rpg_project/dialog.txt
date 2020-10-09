@@ -1,5 +1,5 @@
 ||-- Velkomst --||
-Velkommen til vores Tekst RPG. Er du klar til at blive kastet ud i en vild historie?
+Velkommen til vores Tekst RPG, $name!. Er du klar til at blive kastet ud i en vild historie?
 Tryk (1) for at starte: 
 Tryk (2) for at afslutte spillet: 
 
@@ -52,11 +52,12 @@ Du kigger tilbage ind gennem den åbne bagdør og ser et monster lignende kreatu
 Du rammer det monsterlignende kreatur og løber ud i baghaven. Du ved ikke om det er dødt.
 
 -- Story 6 --
-Du løber med fuld kraft, øksen over hovedet, ind i stuen og giver dit absolut kraftisgste sving med øksen, lige ned genne monsteret.
+Du løber med fuld kraft, øksen over hovedet, ind i stuen og giver dit absolut kraftisgste sving med øksen, lige ned gennem monsteret.
 
 -- Story 7 --
 Du tager bilen og kører ind mod byen!
 
+-- Story 7.1 --
 20 min. senere.
 Du er nået ind til byen.
 Noget er galt. Selvom det er tidligt plejer der altid at være folk i gaderne.
