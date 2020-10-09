@@ -1,0 +1,198 @@
+||-- Velkomst --||
+Velkommen til vores Tekst RPG. Er du klar til at blive kastet ud i en vild historie?
+Tryk (1) for at starte: 
+Tryk (2) for at afslutte spillet: 
+
+||-- Introduktion --||
+Du følger en storyline. Du vil undervejs få nogle valg, som får indflydelse på hvordan storyline forløber sig.
+
+||-- Acquired Items --||
+-- Aqrd 1 --
+- Armor plate
+
+-- Aqrd 2 --
+- Tandbørste
+- Ekstra tøj
+- Riffel
+- Alt mad fra køleskabet
+
+-- Aqrd 3 --
+- Benzin
+
+||-- Achievements --||
+-- Ach 1 --
+MONSTER KREATUR NEDLAGT
+
+-- Ach 2 --
+KØRTE HURTIGERE END 200 KM/T
+
+-- Ach 3 --
+SPISTE EN SNICKERS
+
+-- Ach 4 --
+FYLDTE BENZIN PÅ BILEN
+
+||-- STORY --||
+-- Story 1 --
+Du ligger i din seng. Det er tidlig morgen, som altid når du vågner.
+
+-- Story 2 --
+Du lægger dig til at sove. Zzzz Zzzz Zzzz
+Du vågner med et chok. Din hoveddør bliver sparket ind. Hvad gør du?
+
+-- Story 3 --
+Du er stået op og tager riflen, fra sengekanten, med dig ud i køkkenet
+Du får et chok da hovedøren pludselig bliver sparket ind
+
+-- Story 4 --
+Du står ude i baghaven, men F*ck, du lod riflen være indenfor. Du undre dig over hvad det var der sparkede din dør ind.
+Du kigger tilbage ind gennem den åbne bagdør og ser et monster lignende kreatur stå midt i din stue.
+
+-- Story 5 --
+Du rammer det monsterlignende kreatur og løber ud i baghaven. Du ved ikke om det er dødt.
+
+-- Story 6 --
+Du løber med fuld kraft, øksen over hovedet, ind i stuen og giver dit absolut kraftisgste sving med øksen, lige ned genne monsteret.
+
+-- Story 7 --
+Du tager bilen og kører ind mod byen!
+
+20 min. senere.
+Du er nået ind til byen.
+Noget er galt. Selvom det er tidligt plejer der altid at være folk i gaderne.
+Du kører rundt i gaderne. Ikke et øje er at se. Du kører ud af den anden ende af byen.
+
+WHAAAAAT!
+Her står alle indbyggerne i en gruppe. Du kører langsomt nærmere. 
+ALLE vender sig om. De ser ikke normale ud. Det er slet ikke indbyggere. Det er monstre der spiser indbyggerne.
+
+-- Story 8 --
+Du bevæger dig nærmere. De kigger alle direkte på dig.
+Du bestemmer dig for at de var en dårlig idé at stige ud og skynder dig tilbage i bilen.
+Nu løber de alle mod dig. Du starter bilen og kører VÆK!
+
+-- Story 9 --
+Du ved ikke hvad du gør nu. kører, men hvor kører du hen?
+
+-- Story 10 --
+Du skynder dig hjem. Speederen i bund. Fartgrænsen betyder ikke længere noget.
+
+-- Story 11 --
+10 minutter senere er du hjemme.
+
+Du samler de vigtigste ting.
+
+-- Story 12 --
+Du begynder at kører nordpå. Der er langt.
+
+Sh*t!
+Der skal snart fyldes benzin på bilen. Der er 55 km til næste tankstation.
+Du kan måske kører 60 km, hvis du kører mere økonomisk
+
+-- Story 13 --
+Du vil bare fremmad. Du kører så hurtigt du kan.
+
+krrr krrg grgrgrg!
+Bilen kan ikke kører længere og du må gå de sidste 3 kilometer.
+
+Du går og går og går. Endelig er du fremme ved tankstationen. Men her er helt øde. Du går ind i butikken. Ingen er her. Det er ved at blive mørkt. Hvad gør du?
+
+-- Story 14 -- //læs linjen over
+Du gør dit bedste for at kører så økonomisk som muligt.
+
+krrr krrg grgrgrg!
+Bilen kan ikke kører længere og du må gå den sidste kilometer.
+
+-- Story 15 --
+Glglglglglgl
+Dunken fyldes
+
+-- Story 16 --
+Skal du have en snak med på turen. Der er trods alt 3 km tilbage til bilen
+
+-- Story 17 --
+Du tager en Snickers
+Du går tilbage til bilen og fylder benzin på
+
+-- Story 18 --
+Du går tilbage til bilen og fylder benzin på
+
+-- Story 19 --
+Det er ved at blive mørk, så du kører tilbage til tankstationen.
+Din plan er at få lidt mad og så få sovet lidt 
+
+-- Story 20 --
+Du smovser i dig af lækkerier. Der er masser mad til dage. Frostvarer du kan varme i ovnen. Måske du endda kunne bo her.
+
+Klokken er mange, du må hellere få noget søvn.
+
+-- Story 21 --
+BANG!
+Du vågner med et chok. Din hoveddør bliver sparket ind. et monster står i døren.
+
+Åhh nej, det hele var en drøm der nu bliver til virkelighed.
+
+||-- Choices --||
+-- Valg (1) --
+Sove videre? 
+Måske vågner du aldrig igen.
+
+-- Valg (2) --
+Stå op.
+
+-- Valg (3) --
+Spring op af sengen og løb ud i baghaven.
+
+-- Valg (4) --
+Grib din riffel og skyd
+
+-- Valg (5) --
+Spurt ud ad bagdøren, ud i baghaven.
+
+-- Valg (6) --
+Gå ud i skuret og find din skarpeste økse!
+
+-- Valg (7) --
+Løb ud i bilen og kør ind mod byen.
+
+-- Valg (8) --
+LOOT: Nej?
+
+-- Valg (9) --
+LOOT: Ja?
+
+-- Valg (10) --
+Stig ud af bilen og gå nærmere.
+
+-- Valg (11) --
+Vend bilen og kør med fuld fart VÆK!
+
+-- Valg (12) --
+Kør hjem og smal de vigtigste ting du nok vil få brug for.
+
+-- Valg (13) --
+Efterlad alt og kør hjem til en gammel ven, langt nord på.
+
+-- Valg (14) --
+Speederen i bund. At trille ned ad bakke der hvor du kan, må kunne gøre det:)
+
+-- Valg (15) --
+Kør mere økonomisk.
+
+-- Valg (16) --
+Fyld en 5 liters dunk med benzin. Det burde være nok til at få dig i hvert fald 50 km mere.
+
+-- Valg (17) --
+Spis noget mad fra tankstationen og vent med at hente bilen til i morgen.
+
+-- Valg (18) --
+LOOT: Ja?
+
+-- Valg (19) --
+LOOT: Nej?
+
+-- Valg (20) --
+Sov bag desken.
+
+-- Valg (21) --
+Sov i baglokalet.

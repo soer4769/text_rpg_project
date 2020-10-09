@@ -42,4 +42,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="dialog.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="test.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
 </Project>
