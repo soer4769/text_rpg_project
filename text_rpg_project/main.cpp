@@ -10,7 +10,10 @@
 #include <QTextEdit>
 #include <QLabel>
 #include <QString>
+#include <QCheckBox>
 #include <QTextCodec>
+#include <QComboBox>
+#include <QSpinBox>
 
 // Standard C++ Biblioteker
 #include <iostream>
@@ -18,6 +21,7 @@
 #include <string>
 #include <algorithm>
 #include <vector>
+#include <cstdarg>
 #include <Windows.h>
 
 // Konstanter og globale variabler
@@ -27,7 +31,7 @@ class text_rpg;
 class text_rpg_qt {
 
     // Overordnet variabler
-    short window_size_x, window_size_y;
+    int window_size_x, window_size_y, setting_current_row = 0;
     std::vector<std::pair<QString, float>> player_inventory, player_stats, player_achievements;
 
     // Qt - Window rpg game
@@ -54,6 +58,7 @@ class text_rpg_qt {
     QLabel* tab_inventory_label = new QLabel;
     QLayout* layout_tab_stats = new QHBoxLayout;
     QLabel* tab_stats_label = new QLabel;
+    QGridLayout* layout_tab_settings = new QGridLayout;
     QLayout* layout_tab_achievements = new QHBoxLayout;
     QLabel* tab_achievements_label = new QLabel;
 
@@ -99,13 +104,17 @@ class text_rpg_qt {
         tabs_actionsmenu->setCurrentIndex(0);
 
         // Tab content
-        tab_inventory->setLayout(layout_tab_inventory); // inventory label
+        tab_inventory->setLayout(layout_tab_inventory); // inventory tab
         layout_tab_inventory->addWidget(tab_inventory_label);
         tab_inventory_label->setAlignment(Qt::AlignTop);
-        tab_stats->setLayout(layout_tab_stats); // stats label
+        tab_stats->setLayout(layout_tab_stats); // stats tab
         layout_tab_stats->addWidget(tab_stats_label);
         tab_stats_label->setAlignment(Qt::AlignTop);
-        tab_achievements->setLayout(layout_tab_achievements); // achievements label
+        tab_settings->setLayout(layout_tab_settings); // settings tab
+        layout_tab_settings->setColumnStretch(1, 1);
+        layout_tab_settings->setAlignment(Qt::AlignTop);
+        layout_tab_settings->setVerticalSpacing(20);
+        tab_achievements->setLayout(layout_tab_achievements); // achievements tab
         layout_tab_achievements->addWidget(tab_achievements_label);
         tab_achievements_label->setAlignment(Qt::AlignTop);
 
@@ -235,6 +244,56 @@ class text_rpg_qt {
             update_tab_items(tab_object);
         }
 
+        template <typename TypeLambda> void create_setting_connection(QString setting_type, QString setting_label, TypeLambda& lambda, QStringList setting_values = {}) {
+            QLabel* setting_type_label = new QLabel(setting_label);
+            
+            // Adds a checkbox setting to the panel
+            if (setting_type == "checkbox") {
+                QCheckBox* setting_type_interactable = new QCheckBox;
+
+                QObject::connect(setting_type_interactable, &QCheckBox::clicked, [=]() { lambda(setting_type_interactable->isChecked()); });
+                layout_tab_settings->addWidget(setting_type_interactable, setting_current_row, 0, Qt::AlignTop | Qt::AlignCenter);
+                layout_tab_settings->setRowMinimumHeight(setting_current_row, 25);
+
+            // Adds a dropdown setting to the panel
+            } else if (setting_type == "dropdown") {
+                QComboBox* setting_type_interactable = new QComboBox;
+
+                setting_type_interactable->setFixedWidth(100);
+                setting_type_interactable->addItems(setting_values);
+
+                QObject::connect(setting_type_interactable, qOverload<int>(&QComboBox::currentIndexChanged), [=]() { lambda(setting_type_interactable->currentIndex()); });
+                layout_tab_settings->addWidget(setting_type_interactable, setting_current_row, 0, Qt::AlignTop | Qt::AlignCenter);
+
+            // Adds a slider setting to the panel
+            } else if (setting_type == "slider") {
+                QSlider* setting_type_interactable = new QSlider(Qt::Horizontal);
+
+                setting_type_interactable->setFixedWidth(100);
+                setting_type_interactable->setMinimum(QString(setting_values[0]).toInt());
+                setting_type_interactable->setMaximum(QString(setting_values[1]).toInt());
+                setting_type_interactable->setValue(QString(setting_values[2]).toInt());
+
+                QObject::connect(setting_type_interactable, &QSlider::valueChanged, [=]() { lambda(setting_type_interactable->value()); });
+                layout_tab_settings->addWidget(setting_type_interactable, setting_current_row, 0, Qt::AlignTop | Qt::AlignCenter);
+
+            // Adds a number setting to the panel
+            } else if (setting_type == "number") {
+                QSpinBox* setting_type_interactable = new QSpinBox;
+
+                setting_type_interactable->setFixedWidth(100);
+                setting_type_interactable->setRange(QString(setting_values[0]).toInt(), QString(setting_values[1]).toInt());
+                setting_type_interactable->setSingleStep(QString(setting_values[2]).toInt());
+                setting_type_interactable->setValue(QString(setting_values[3]).toInt());
+
+                QObject::connect(setting_type_interactable, &QSpinBox::textChanged, [=]() { lambda(setting_type_interactable->value()); });
+                layout_tab_settings->addWidget(setting_type_interactable, setting_current_row, 0, Qt::AlignTop | Qt::AlignCenter);
+            }
+
+            layout_tab_settings->addWidget(setting_type_label, setting_current_row, 1, Qt::AlignTop | Qt::AlignLeft);
+            setting_current_row += 2;
+        }
+
         void remove_tab_item(QString item_label, QString item_name, float item_amount, bool delete_if_empty = false) {
             std::vector<std::pair<QString, float>>& tab_object = get_tab_label_object(item_label);
 
@@ -267,7 +326,10 @@ class text_rpg_qt {
             });
         }
 
-        text_rpg_qt(short wsize_x, short wsize_y) : window_size_x{ wsize_x }, window_size_y{ wsize_y }{
+        text_rpg_qt(int wsize_x, int wsize_y) {
+            window_size_x = wsize_x;
+            window_size_y = wsize_y;
+
             qt_setup();
         }
 };
@@ -436,7 +498,7 @@ class text_rpg : public text_rpg_qt {
                         }
 
                         string_replace_all_instances(line, "$name", player_name);
-                        line != "" ? text_browser_append(line) : nullptr;
+                        line != "" ? text_browser_append(line) : NULL;
                     }
                 }
 
@@ -450,6 +512,15 @@ class text_rpg : public text_rpg_qt {
     }
 
 public:
+    // Nedenfor ses eksempler for hvordan man kan sætte indstilliner op
+    // > create_setting_connection(type, tekst, [=](variabler){ funktionalitet })
+    // > type: checkbox, dropdown, slider, number
+    // > variable returns: bool checked (checkbox), int selected_id (dropdown), int slider_val (slider), int number_val (number)
+    //create_setting_connection("checkbox", "kage tilgængelighed", [=](bool checked_status) { qDebug() << checked_status; });
+    //create_setting_connection("dropdown", "kage farve", [=](int farve_id) { qDebug() << farve_id; }, {"rød", "grøn", "blå"});
+    //create_setting_connection("slider", "kage mængde", [=](int slider_val) { qDebug() << slider_val; }, {"0", "100", "25"});
+    //create_setting_connection("number", "kage antal", [=](int number_val) { qDebug() << number_val; }, { "0", "100", "5", "25" });
+
     text_rpg() : text_rpg_qt(800, 600) {
         on_player_name_accept(this, &text_rpg::storyLine, &player_name);
         set_label_player_area(player_area);
@@ -457,6 +528,7 @@ public:
         set_label_player_gold(player_gold);
         set_label_player_armour(player_armour);
         set_label_player_mana(player_mana);
+
         // text_browser_append(readLine([Indsæt linje]))
         //readLine(2);
     }
