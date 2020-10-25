@@ -1,19 +1,19 @@
 ||-- Velkomst --||
 Velkommen til vores Tekst RPG, $name!. Er du klar til at blive kastet ud i en vild historie?
-Tryk (1) for at starte: 
-Tryk (2) for at afslutte spillet: 
 
 ||-- Introduktion --||
 Du følger en storyline. Du vil undervejs få nogle valg, som får indflydelse på hvordan storyline forløber sig.
 
 ||-- Acquired Items --||
+-- Aqrd 0.1 --
+- Riffel
+
 -- Aqrd 1 --
 - Armor plate
 
 -- Aqrd 2 --
 - Tandbørste
 - Ekstra tøj
-- Riffel
 - Alt mad fra køleskabet
 
 -- Aqrd 3 --
@@ -96,9 +96,10 @@ Du vil bare fremmad. Du kører så hurtigt du kan.
 krrr krrg grgrgrg!
 Bilen kan ikke kører længere og du må gå de sidste 3 kilometer.
 
+-- Story 13.1 --
 Du går og går og går. Endelig er du fremme ved tankstationen. Men her er helt øde. Du går ind i butikken. Ingen er her. Det er ved at blive mørkt. Hvad gør du?
 
--- Story 14 -- //læs linjen over
+-- Story 14 --
 Du gør dit bedste for at kører så økonomisk som muligt.
 
 krrr krrg grgrgrg!
@@ -109,11 +110,10 @@ Glglglglglgl
 Dunken fyldes
 
 -- Story 16 --
-Skal du have en snak med på turen. Der er trods alt 3 km tilbage til bilen
+Skal du have en snack med på turen. Der er trods alt 3 km tilbage til bilen
 
 -- Story 17 --
 Du tager en Snickers
-Du går tilbage til bilen og fylder benzin på
 
 -- Story 18 --
 Du går tilbage til bilen og fylder benzin på
@@ -133,6 +133,8 @@ Du vågner med et chok. Din hoveddør bliver sparket ind. et monster står i dø
 
 Åhh nej, det hele var en drøm der nu bliver til virkelighed.
 
+(: SLUT :)
+
 ||-- Choices --||
 -- Valg (1) --
 Sove videre? 
@@ -142,19 +144,19 @@ Måske vågner du aldrig igen.
 Stå op.
 
 -- Valg (3) --
-Spring op af sengen og løb ud i baghaven.
+Springe op af sengen og løbe ud i baghaven.
 
 -- Valg (4) --
-Grib din riffel og skyd
+Gribe din riffel og skyd
 
 -- Valg (5) --
-Spurt ud ad bagdøren, ud i baghaven.
+Spurte ud ad bagdøren, ud i baghaven.
 
 -- Valg (6) --
-Gå ud i skuret og find din skarpeste økse!
+Gå ud i skuret og finde din skarpeste økse!
 
 -- Valg (7) --
-Løb ud i bilen og kør ind mod byen.
+Løbe ud i bilen og køre ind mod byen.
 
 -- Valg (8) --
 LOOT: Nej?
@@ -163,28 +165,28 @@ LOOT: Nej?
 LOOT: Ja?
 
 -- Valg (10) --
-Stig ud af bilen og gå nærmere.
+Stige ud af bilen og gå nærmere.
 
 -- Valg (11) --
-Vend bilen og kør med fuld fart VÆK!
+Vende bilen og køre med fuld fart VÆK!
 
 -- Valg (12) --
-Kør hjem og smal de vigtigste ting du nok vil få brug for.
+Køre hjem og samle de vigtigste ting du nok vil få brug for.
 
 -- Valg (13) --
-Efterlad alt og kør hjem til en gammel ven, langt nord på.
+Efterlade alt og køre hjem til en gammel ven, langt nord på.
 
 -- Valg (14) --
-Speederen i bund. At trille ned ad bakke der hvor du kan, må kunne gøre det:)
+Træde speederen i bund. At trille ned ad bakke der hvor du kan, må kunne gøre det:)
 
 -- Valg (15) --
-Kør mere økonomisk.
+Køre mere økonomisk.
 
 -- Valg (16) --
-Fyld en 5 liters dunk med benzin. Det burde være nok til at få dig i hvert fald 50 km mere.
+Fylde en 5 liters dunk med benzin. Det burde være nok til at få dig i hvert fald 50 km mere.
 
 -- Valg (17) --
-Spis noget mad fra tankstationen og vent med at hente bilen til i morgen.
+Spise noget mad fra tankstationen og vente med at hente bilen til i morgen.
 
 -- Valg (18) --
 LOOT: Ja?
@@ -193,7 +195,15 @@ LOOT: Ja?
 LOOT: Nej?
 
 -- Valg (20) --
-Sov bag desken.
+Sove bag desken.
 
 -- Valg (21) --
-Sov i baglokalet.
+Sove i baglokalet.
+
+-- Vil du --
+Vil du:
+
+-- Eller --
+Eller vil du:
+
+-- Slut --

@@ -30,12 +30,6 @@
     <QtUic Include="text_rpg_project.ui">
       <Filter>Resource Files</Filter>
     </QtUic>
-    <QtMoc Include="text_rpg_project.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <ClCompile Include="text_rpg_project.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -44,9 +38,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="dialog.txt">
-      <Filter>Source Files</Filter>
-    </Text>
-    <Text Include="test.txt">
       <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>
